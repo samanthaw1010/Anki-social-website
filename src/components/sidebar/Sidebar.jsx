@@ -5,6 +5,7 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarWrapper">
+        {/* ==== List Menu ==== */}
         <ul className="sidebarList">
             <li className="sidebarListItem">
                 <RssFeed className="sidebarIcon"/>
@@ -41,6 +42,17 @@ export default function Sidebar() {
             <li className="sidebarListItem">
                 <School className="sidebarIcon"/>
                 <span className="sidebarListItemText">Courses</span>
+            </li>
+        </ul>
+
+        <button className="sidebarButton">Show More</button>
+        <hr className="sidebarHr" />
+
+        {/* ==== Friend List ==== */}
+        <ul className="sidebarFriendList">
+            <li className="sidebarFriend">
+                <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImg" />
+                <span className="sidebarFriendName">Jane Doe</span>
             </li>
         </ul>
       </div>
